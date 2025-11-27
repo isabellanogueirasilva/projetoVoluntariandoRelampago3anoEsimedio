@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro da ONG - Voluntariado Relâmpago</title>
+
+  <link rel="stylesheet" href="cadasastroong.css">
+
+  <script src="/_sdk/element_sdk.js"></script>
+  <script src="/_sdk/data_sdk.js"></script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="page-wrapper">
+
+    <header>
+      <div class="header-content">
+        <div class="logo">
+          <span class="logo-icon">⚡</span>
+          <h1 class="logo-text" id="site-title">Voluntariado Relâmpago</h1>
+        </div>
+
+              <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li>Ações Urgentes</a></li>
+          <li>Contato</a></li>
+        </ul>
+      </nav>
+
+    
+      </div>
+    </header>
+
+    <main class="signup-container">
+      <div class="signup-content">
+
+        <div class="page-header">
+          <h2 class="page-title" id="page-title">Cadastro da ONG</h2>
+          <p class="page-subtitle" id="page-subtitle">Cadastre sua organização</p>
+        </div>
+
+        <div class="signup-form-card">
+
+          <div class="success-message" id="success-message">
+            Cadastro realizado com sucesso! 🎉
+          </div>
+
+          <form id="signup-form">
+
+            <div class="form-group">
+              <label class="form-label">Nome da Organização *</label>
+              <input type="text" id="institution" class="form-input" placeholder="Digite o nome da ONG" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">CNPJ *</label>
+              <input type="text" id="cnpj" class="form-input" placeholder="00.000.000/0000-00" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Responsável *</label>
+              <input type="text" id="responsible" class="form-input" placeholder="Nome do responsável" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">E-mail *</label>
+              <input type="email" id="email" class="form-input" placeholder="contato@ong.com" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Localização *</label>
+              <select id="location" class="form-select" required>
+                <option value="">Selecione a cidade</option>
+                <option value="sao-paulo">São Paulo - SP</option>
+                <option value="rio-janeiro">Rio de Janeiro - RJ</option>
+                <option value="belo-horizonte">Belo Horizonte - MG</option>
+                <option value="brasilia">Brasília - DF</option>
+                <option value="curitiba">Curitiba - PR</option>
+                <option value="porto-alegre">Porto Alegre - RS</option>
+                <option value="salvador">Salvador - BA</option>
+                <option value="fortaleza">Fortaleza - CE</option>
+                <option value="recife">Recife - PE</option>
+                <option value="manaus">Manaus - AM</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Áreas de atuação *</label>
+              <div class="checkbox-group">
+                <label><input type="checkbox" name="areas" value="education"> Educação</label>
+                <label><input type="checkbox" name="areas" value="health"> Saúde</label>
+                <label><input type="checkbox" name="areas" value="environment"> Meio Ambiente</label>
+                <label><input type="checkbox" name="areas" value="elderly"> Idosos</label>
+                <label><input type="checkbox" name="areas" value="children"> Crianças</label>
+                <label><input type="checkbox" name="areas" value="animals"> Animais</label>
+                <label><input type="checkbox" name="areas" value="food"> Alimentação</label>
+                <label><input type="checkbox" name="areas" value="culture"> Cultura</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Senha *</label>
+              <input type="password" id="password" class="form-input" placeholder="Mínimo 6 caracteres" required>
+            </div>
+
+            <button type="submit" class="btn-submit">Cadastrar ONG</button>
+          </form>
+
+          <div class="login-link">
+            Já tem conta? <a href="#">Fazer login</a>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+  <script src="cadastroong.js"></script>
+</body>
+</html>
